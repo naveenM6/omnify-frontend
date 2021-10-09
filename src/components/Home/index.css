@@ -1,0 +1,127 @@
+.home-container{
+    background-color: #000000;
+    color:#ffffff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0 20px;
+}
+.logo-header{
+    color: #23d366;
+}
+.logout{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.logout:hover{
+    color: #23d366;
+    border: 2px solid #23d366;
+}
+.content-container{
+    animation: fadeIn 2s;
+    transition-duration: 2s;
+    padding: 0 30px;
+}
+.event-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+
+.event-inputs{
+    padding:10px;
+    border-radius: 4px;
+    outline: none;
+    width: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.ip-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-option{
+    width: 50%;
+    margin-left:20px;
+    padding: 10px;
+}
+
+.create-btn{
+    width:fit-content;
+    padding: 10px;
+    border-radius: 4px;
+    color:#ffffff;
+    border: 2px solid #ffffff;
+    background-color:transparent;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.logout:hover,.create-btn:hover{
+    color: #23d366;
+    border: 2px solid #23d366;
+}
+
+.msg {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
+}
+.fetched-data {
+    overflow: auto;
+}
+
+@media (max-width: 767px){
+    .event-form-container{
+        padding: 10px;
+    }
+    .content-container{
+        padding: 10px;
+    }
+    .event-inputs{
+        width: 75%;
+    }
+    .create-btn{
+        margin-left: 50%;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width:768px){
+    .home-container{
+        height: 100vh;
+    }
+    .content-container{
+        display: flex;
+    }
+    .event-form-container{
+        width: 60%;
+        height: 80vh;
+    }
+    .create-btn{
+        margin-left: 40%;
+    }
+    .fetched-date{
+        width:50%;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
