@@ -39,7 +39,7 @@ class Login extends Component {
     const { email, password } = this.state;
     const userDetails = { email: email, password: password};
     const jsonData = await JSON.stringify(userDetails);
-    const url = `https://omnifybackend.herokuapp.com/login`;
+    const url = `http://localhost:5004/login`;
     const options = {
       headers: {
         "content-type": "application/json",
