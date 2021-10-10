@@ -11,7 +11,6 @@
     background-color: #292525;
     margin:10px;
     padding:20px;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -20,6 +19,9 @@
     .event-data-content{
         justify-content: center;
         margin-top: 10px;
+    }
+    .item-container{
+        padding: 10px;
     }
 }
 

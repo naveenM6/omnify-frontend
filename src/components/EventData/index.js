@@ -1,4 +1,5 @@
 import { Component,React } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import './index.css'
 
@@ -10,7 +11,7 @@ class EventData extends Component {
       <div className="event-data-content">
         {datesArr.map((item) => {
           return (
-            <div className="item-container">
+            <div className="item-container" key={uuidv4()}>
               <p>Event Name:- {name}</p>
               <p>Description:- {description}</p>
               <p>
