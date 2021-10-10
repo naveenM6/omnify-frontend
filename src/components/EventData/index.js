@@ -11,13 +11,13 @@ class EventData extends Component {
         {datesArr.map((item) => {
           return (
             <div className="item-container">
-              <p>{name}</p>
-              <p>{description}</p>
+              <p>Event Name:- {name}</p>
+              <p>Description:- {description}</p>
               <p>
-                {start} - {end}
+                Start Time:- {start} , End Time :- {end}
               </p>
-              <p>{day}</p>
-              <p>{item}</p>
+              <p>Selected Weekday:- {day}</p>
+              <p>Date of the Day:- {item}</p>
             </div>
           );
         })}
