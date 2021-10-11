@@ -1,11 +1,10 @@
-import { Component,React } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import './index.css'
+import "./index.css";
 
-class EventData extends Component {
-  getRenderingData = () => {
-    const { display } = this.props;
+const EventData = props => {
+  const getRenderingData = () => {
+    const { display } = props;
     const { name, description, start, end, day, datesArr } = display;
     return (
       <div className="event-data-content">
@@ -25,10 +24,7 @@ class EventData extends Component {
       </div>
     );
   };
-
-  render() {
-    return <>{this.getRenderingData()}</>;
-  }
-}
+  return <>{getRenderingData()}</>;
+};
 
 export default EventData;
